@@ -1,10 +1,1 @@
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.section, .cards article, .steps div').forEach(el => {
-  el.classList.add('reveal');
-  observer.observe(el);
-});
+document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Ajoute ici le lien officiel du dépôt GitHub.');}));
