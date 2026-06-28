@@ -117,14 +117,14 @@
     <section class="section-soft">
       <div class="section-soft">
 <div>
-<p>Sécurité
-
+<p><strong>Sécurité</strong>
+<br>
 La sécurité a été un axe majeur du développement de NeoPanel Studio.
-
+<br>
 Plusieurs niveaux de protection ont été intégrés afin de limiter les risques d'accès non autorisés tout en conservant une utilisation simple.
-
+<br>
 Les protections incluent notamment :
-
+<br>
 authentification obligatoire avant toute utilisation ;
 code de session généré automatiquement à chaque lancement du logiciel ;
 QR Code ne contenant que l'adresse locale du PC, sans information sensible ;
@@ -135,21 +135,47 @@ journalisation des événements de sécurité ;
 possibilité d'autoriser ou de bloquer individuellement les appareils ;
 déconnexion immédiate des appareils si nécessaire ;
 contrôle des appareils autorisés depuis l'application PC.
-
+<br>
 Pour des raisons de sécurité, certains mécanismes internes ne sont volontairement pas détaillés publiquement.
-
+<br>
 Confidentialité
-
+<br>
 NeoPanel Studio respecte la vie privée.
+<br>
+<li>aucune création de compte ;</li>
+<li>aucune collecte de données personnelles ;</li>
+<li>aucune télémétrie ;</li>
+<li>aucun serveur cloud ;</li>
+<li>toutes les informations restent sur le PC de l'utilisateur.</li></p>
+<br>
+<hr>
+  <br>
+  Vérification antivirus
 
-aucune création de compte ;
-aucune collecte de données personnelles ;
-aucune télémétrie ;
-aucun serveur cloud ;
-toutes les informations restent sur le PC de l'utilisateur.</p>
-
-
-  
+La version 1.2.2 a été analysée par VirusTotal.
+<br>
+Résultat de l'analyse :
+<br>
+détection négative par la quasi-totalité des moteurs antivirus ;
+aucune détection par Microsoft Defender, Bitdefender, Kaspersky, Avast, Malwarebytes, ESET, Sophos, Fortinet, CrowdStrike et la plupart des autres moteurs reconnus ;
+une seule alerte heuristique (« machine learning ») provenant d'un moteur, ce qui est courant pour une application Electron récemment publiée et non encore signée numériquement.
+<br>
+<u>Aucun malware connu n'a été détecté.</u>
+  <hr>
+  Pourquoi une alerte heuristique peut apparaître ?
+<br>
+NeoPanel Studio est une application récente.
+<br>
+Comme beaucoup de logiciels Electron, elle :
+<br>
+n'a pas encore d'historique de réputation ;
+n'est pas encore signée numériquement ;
+ouvre un serveur local afin de communiquer avec le smartphone.
+<br>
+Ces caractéristiques peuvent conduire certains moteurs utilisant l'intelligence artificielle à attribuer un score de prudence, sans pour autant identifier un comportement malveillant.
+<br>
+Une signature numérique et une diffusion plus large devraient réduire ce type de faux positif.
+  <br>
 </div>
 </section>
   </template>
